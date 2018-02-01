@@ -16,7 +16,7 @@
 ## Установка шаблона
 
 ``` sh
-$ git clone https://github.com/tsergeytovarov/grunt-project.git project-name
+$ git clone https://github.com/artembert/grunt-project.git [project-name]
 $ cd project-name
 $ npm install --global yarn
 $ yarn install
