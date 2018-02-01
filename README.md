@@ -17,7 +17,7 @@
 
 ``` sh
 $ git clone https://github.com/artembert/grunt-project.git [project-name]
-$ cd project-name
+$ cd [project-name]
 $ npm install --global yarn
 $ yarn install
 ```
