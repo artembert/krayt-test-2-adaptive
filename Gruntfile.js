@@ -32,7 +32,7 @@ module.exports = function(grunt) {
       fonts: {
         expand: true,
         cwd: 'src/font/',
-        src: ['*.{eot,svg,woff,ttf}'],
+        src: ['*.{eot,svg,woff,woff2,ttf}'],
         dest: 'build/font/'
       },
       html: {
@@ -148,7 +148,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ['build/img/*.{png,jpg,gif,svg}']
+          src: ['build/img/*.{png,jpg,gif}']
         }]
       }
     },
