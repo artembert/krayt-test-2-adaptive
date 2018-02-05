@@ -13,10 +13,166 @@
 //   font-style: normal;
 // }
 
-$base-font: Arial, sans-serif;
+@font-face {
+  font-weight: normal;
+  font-family: 'Roboto';
+
+  src: local('Roboto'),
+  local('Roboto'),
+  url('../font/Roboto-Regular.woff2') format('woff2'),
+  url('../font/Roboto-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: 'Roboto';
+
+  src: local('Roboto Light'),
+  local('RobotoLight'),
+  url('../font/Roboto-Light.woff2') format('woff2'),
+  url('../font/Roboto-Light.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'Roboto';
+
+  src: local('Roboto Medium'),
+  local('RobotoMedium'),
+  url('../font/Roboto-Medium.woff2') format('woff2'),
+  url('../font/Roboto-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: 'Roboto';
+
+  src: local('Roboto Light'),
+  local('RobotoLight'),
+  url('../font/Roboto-Light.woff2') format('woff2'),
+  url('../font/Roboto-Light.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Dosis';
+
+  src: local('Dosis'),
+  local('Dosis'),
+  url('../font/Dosis.woff2') format('woff2'),
+  url('../font/Dosis.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'Dosis';
+
+  src: local('Dosis Medium'),
+  local('DosisMedium'),
+  url('../font/Dosis-Medium.woff2') format('woff2'),
+  url('../font/Dosis-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: 'Dosis';
+
+  src: local('Dosis Semibold'),
+  local('DosisSemibold'),
+  url('../font/Dosis-Semibold.woff2') format('woff2'),
+  url('../font/Dosis-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Dosis';
+
+  src: local('Dosis Bold'),
+  local('DosisBold'),
+  url('../font/Dosis-Bold.woff2') format('woff2'),
+  url('../font/Dosis-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+
+  src:
+  //  local('Font Awesome 5 Free'),
+  //local('FontAwesome5Free'),
+  url('../font/fa-solid-900.woff2') format('woff2'),
+  url('../font/fa-solid-900.woff') format('woff');
+}
+
+$base-font: 'Roboto', Arial, sans-serif;
+$title-font: 'Dosis', Arial, sans-serif;
+$fa-solid: 'Font Awesome 5 Free', Arial, sans-serif;
 
 body {
-  font-family: $base-font;
   font-size: 14px;
   line-height: 20px;
+  font-family: $base-font;
+
+  cursor: default;
+}
+
+.text {
+  margin: 0;
+
+  font-weight: $fw-light;
+  font-size: 14px;
+  line-height: 24px;
+  //font-family: $base-font;
+}
+
+.text--white {
+  color: $text-white-color;
+}
+
+.text--gray {
+  color: $text-gray-color;
+}
+
+.text--center {
+  text-align: center;
+  margin-right: 270px;
+  margin-left: 270px;
+}
+
+
+.text-list {
+  margin: 0;
+  margin-top: 9px;
+  padding: 0;
+
+  list-style: none;
+  line-height: 34px;
+}
+
+.text-list--white {
+  color: $text-white-color;
+}
+
+.text-list--gray {
+  color: $text-gray-color;
+}
+
+.text-list li {
+  position: relative;
+
+  margin-left: 35px;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 18px;
+
+  font-family: $title-font;
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: $fw-medium;
+}
+
+.section-title--center {
+  text-align: center;
 }

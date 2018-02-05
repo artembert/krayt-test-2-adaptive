@@ -1,16 +1,84 @@
-.btn {
+.button {
   display: inline-block;
   box-sizing: border-box;
-  cursor: pointer;
+
+  font: inherit;
+  font-weight: $fw-medium;
+  font-size: 14px;
+  line-height: 14px;
   text-align: center;
-  vertical-align: top;
+  color: $text-black-color;
   text-decoration: none;
 
-  &:hover {
-    opacity: 0.8;
-  }
+  background-color: $button-color;
+  outline: none;
+  cursor: pointer;
+}
 
-  &:active {
-    opacity: 1;
+.button--main-nav {
+  padding-top: 9px;
+  padding-right: 28px;
+  padding-bottom: 8px;
+  padding-left: 28px;
+
+  border: 2px solid #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  transition: box-shadow $transition-time $transition-function,
+  background-color $transition-time $transition-function,
+  border-color $transition-time $transition-function, color $transition-time $transition-function;
+
+  &:hover {
+    color: $text-white-color;
+
+    background-color: $button-color-blue;
+    border: 2px solid darken($button-color-blue, 10%);
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
+.button--start-home {
+  padding-top: 14px;
+  padding-right: 40px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+
+  border: 5px solid #e2602d;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+
+  transition: box-shadow $transition-time $transition-function,
+  background-color $transition-time $transition-function,
+border-color $transition-time $transition-function,  color $transition-time $transition-function;
+
+  &:hover {
+    color: $text-white-color;
+
+    background-color: $button-color-blue;
+    border: 5px solid darken($button-color-blue, 10%);
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
+.start-home__images {
+  margin-top: 79px;
+}
+
+.round {
+  position: relative;
+
+  background-image: $linear-gradient;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  transition: background $transition-time $transition-function;
+
+  &:hover {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3);
   }
 }

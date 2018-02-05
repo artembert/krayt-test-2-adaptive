@@ -1,0 +1,58 @@
+.icon {
+  position: absolute;
+}
+
+.icon--white {
+  fill: #ffffff;
+}
+
+.icon--pink {
+  fill: $pink-color;
+}
+
+.icon--black {
+  fill: $text-black-color;
+}
+
+.icon--gray {
+  //fill: $text-gray-color;
+}
+
+.icon__advantages {
+  top: 25px;
+  left: 0px;
+
+  width: 75px;
+  height: 26px;
+}
+
+.icon__check-circle {
+  top: 7px;
+  left: -35px;
+
+  width: 16px;
+  height: 16px;
+}
+
+.icon__download {
+  top: 57px;
+  left: 57px;
+  z-index: 2;
+
+  margin-top: -25px;
+  margin-left: -20px;
+}
+
+.icon__apple {
+  width: 41px;
+  height: 50px;
+}
+
+.icon__apple:hover {
+  fill: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+}
+
+.icon__play {
+  margin-left: -10px;
+  margin-top: -11.5px;
+}

@@ -1,0 +1,75 @@
+.reviews-item {
+  box-sizing: border-box;
+  width: 360px;
+  padding-top: 35px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+
+  background-color: #f7fafc;
+  transition: background $transition-time $transition-function, box-shadow $transition-time $transition-function;
+}
+
+.reviews-item:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-item__author {
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 22px;
+  padding-top: 17px;
+
+  padding-left: 100px;
+
+  min-height: 80px;
+
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 80px;
+    height: 80px;
+
+    background-image: url('../img/reviews-item__author.jpg');
+    border-radius: 50%;
+  }
+}
+
+.reviews-item__author--Bullock {
+
+  &::before {
+    background-position: 0 0;
+  }
+}
+
+.reviews-item__author--Sebastian {
+
+  &::before {
+    background-position: -110px 0;
+  }
+}
+
+.reviews-item__author--Bilbau {
+
+  &::before {
+    background-position: -220px 0;
+  }
+}
+
+.reviews-item__author-name {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  font-family: $title-font;
+  color: $text-black-color;
+}
+
+.reviews-item__company {
+  display: block;
+}

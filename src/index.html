@@ -1,16 +1,467 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Название проекта - меню</title>
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Landing template</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
 
-    <ul>
-      <li><a href="main.html" target="_blank">Главная страница</a></li>
+<svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+  <symbol id="tags" viewBox="0 0 640 512">
+    <title id="tags-title">tags</title>
+    <path
+      d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path>
+  </symbol>
+  <symbol id="life-ring" viewBox="0 0 512 512">
+    <title id="life-ring-title">Life Ring</title>
+    <path
+      d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm173.696 119.559l-63.399 63.399c-10.987-18.559-26.67-34.252-45.255-45.255l63.399-63.399a218.396 218.396 0 0 1 45.255 45.255zM256 352c-53.019 0-96-42.981-96-96s42.981-96 96-96 96 42.981 96 96-42.981 96-96 96zM127.559 82.304l63.399 63.399c-18.559 10.987-34.252 26.67-45.255 45.255l-63.399-63.399a218.372 218.372 0 0 1 45.255-45.255zM82.304 384.441l63.399-63.399c10.987 18.559 26.67 34.252 45.255 45.255l-63.399 63.399a218.396 218.396 0 0 1-45.255-45.255zm302.137 45.255l-63.399-63.399c18.559-10.987 34.252-26.67 45.255-45.255l63.399 63.399a218.403 218.403 0 0 1-45.255 45.255z"></path>
+  </symbol>
+  <symbol id="paint-brush" viewBox="0 0 512 512">
+    <title id="paint-brush-title">Paint Brush</title>
+    <path
+      d="M269.9 364.6c1.4 6.4 2.1 13 2.1 19.7 0 81.2-54.2 127.7-134.8 127.7C41.5 512 0 435.1 0 347.6c10.4 7.1 46.9 36.5 58.7 36.5 7 0 13-4 15.5-10.6 23.6-62.2 66.5-76.5 112.9-77.4 15.6 33.8 46.1 59.6 82.8 68.5zM460.6 0c-14.4 0-27.9 6.4-38.2 15.7C228.2 190 208 194.1 208 245.4c0 48.8 40.5 90.6 90.2 90.6 59 0 93.2-43.4 200.6-244.8 7-13.7 13.2-28.5 13.2-43.9C512 19.7 487.3 0 460.6 0z"></path>
+  </symbol>
+  <symbol id="file-alt" viewBox="0 0 384 512">
+    <title id="file-alt-title">Alternate File</title>
+    <path
+      d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path>
+  </symbol>
+  <symbol id="fire-extinguisher" viewBox="0 0 448 512">
+    <title id="fire-extinguisher-title">fire-extinguisher</title>
+    <path
+      d="M434.027 26.329l-168 28C254.693 56.218 256 67.8 256 72h-58.332C208.353 36.108 181.446 0 144 0c-39.435 0-66.368 39.676-52.228 76.203-52.039 13.051-75.381 54.213-90.049 90.884-4.923 12.307 1.063 26.274 13.37 31.197 12.317 4.926 26.279-1.075 31.196-13.37C75.058 112.99 106.964 120 168 120v27.076c-41.543 10.862-72 49.235-72 94.129V488c0 13.255 10.745 24 24 24h144c13.255 0 24-10.745 24-24V240c0-44.731-30.596-82.312-72-92.97V120h40c0 2.974-1.703 15.716 10.027 17.671l168 28C441.342 166.89 448 161.25 448 153.834V38.166c0-7.416-6.658-13.056-13.973-11.837zM144 72c-8.822 0-16-7.178-16-16s7.178-16 16-16 16 7.178 16 16-7.178 16-16 16z"></path>
+  </symbol>
+  <symbol id="check-circle" viewBox="0 0 512 512">
+    <title id="check-circle-title">Check Circle</title>
+    <path
+      d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
+  </symbol>
+  <symbol id="cog" viewBox="0 0 512 512">
+    <title id="cog-title">cog</title>
+    <path
+      d="M444.788 291.1l42.616 24.599c4.867 2.809 7.126 8.618 5.459 13.985-11.07 35.642-29.97 67.842-54.689 94.586a12.016 12.016 0 0 1-14.832 2.254l-42.584-24.595a191.577 191.577 0 0 1-60.759 35.13v49.182a12.01 12.01 0 0 1-9.377 11.718c-34.956 7.85-72.499 8.256-109.219.007-5.49-1.233-9.403-6.096-9.403-11.723v-49.184a191.555 191.555 0 0 1-60.759-35.13l-42.584 24.595a12.016 12.016 0 0 1-14.832-2.254c-24.718-26.744-43.619-58.944-54.689-94.586-1.667-5.366.592-11.175 5.459-13.985L67.212 291.1a193.48 193.48 0 0 1 0-70.199l-42.616-24.599c-4.867-2.809-7.126-8.618-5.459-13.985 11.07-35.642 29.97-67.842 54.689-94.586a12.016 12.016 0 0 1 14.832-2.254l42.584 24.595a191.577 191.577 0 0 1 60.759-35.13V25.759a12.01 12.01 0 0 1 9.377-11.718c34.956-7.85 72.499-8.256 109.219-.007 5.49 1.233 9.403 6.096 9.403 11.723v49.184a191.555 191.555 0 0 1 60.759 35.13l42.584-24.595a12.016 12.016 0 0 1 14.832 2.254c24.718 26.744 43.619 58.944 54.689 94.586 1.667 5.366-.592 11.175-5.459 13.985L444.788 220.9a193.485 193.485 0 0 1 0 70.2zM336 256c0-44.112-35.888-80-80-80s-80 35.888-80 80 35.888 80 80 80 80-35.888 80-80z"></path>
+  </symbol>
+  <symbol id="apple" viewBox="0 0 333 400.6">
+    <g>
+      <path fill="#DCDFE1" stroke="#DCDFE1" stroke-width="0" stroke-linejoin="round" d="
+	M236.9,17.5h2.6c2,25.8-7.7,45.1-19.7,59c-11.7,13.8-27.8,27.3-53.8,25.2c-1.7-25.4,8.2-43.3,20.1-57.2
+	C197.1,31.6,217.4,20.1,236.9,17.5L236.9,17.5z M236.9,17.5"/>
+      <path fill="#DCDFE1" stroke="#DCDFE1" stroke-width="0" stroke-linejoin="round" d="
+	M315.5,285.8v0.8c-7.3,22.1-17.7,41.1-30.4,58.6c-11.6,16-25.9,37.5-51.3,37.5c-21.9,0-36.4-14.1-58.9-14.5
+	c-23.8-0.4-36.9,11.8-58.6,14.9h-7.4c-16-2.3-28.9-15-38.2-26.3C42.9,323,21.5,279.5,17.5,223.9v-16.4c1.7-39.8,21-72.3,46.8-87.9
+	c13.6-8.3,32.2-15.5,53-12.3c8.9,1.4,18,4.5,26,7.4c7.5,3,17,8.1,25.9,7.8c6.1-0.2,12.2-3.4,18.3-5.6c17.9-6.5,35.4-13.9,58.6-10.4
+	c27.8,4.2,47.6,16.5,59.7,35.7c-23.5,15-42.1,37.6-38.9,76C269.7,253.3,290.1,273.7,315.5,285.8L315.5,285.8z M315.5,285.8"/>
+      <linearGradient id="SVGID_1_" x1="165.7479" y1="59.7292" x2="239.7363" y2="59.7292">
+        <stop offset="0" style="stop-color:#F37131"/>
+        <stop offset="1" style="stop-color:#ED1E80"/>
+      </linearGradient>
+      <path fill="url(#SVGID_1_)" d="M236.9,17.5h2.6c2,25.8-7.7,45.1-19.7,59
+	c-11.7,13.8-27.8,27.3-53.8,25.2c-1.7-25.4,8.2-43.3,20.1-57.2C197.1,31.6,217.4,20.1,236.9,17.5L236.9,17.5z M236.9,17.5"/>
+      <linearGradient id="SVGID_2_" x1="17.5" y1="244.3521" x2="315.5129" y2="244.3521">
+        <stop offset="0" style="stop-color:#F37131"/>
+        <stop offset="1" style="stop-color:#ED1E80"/>
+      </linearGradient>
+      <path fill="url(#SVGID_2_)" d="M315.5,285.8v0.8c-7.3,22.1-17.7,41.1-30.4,58.6
+	c-11.6,16-25.9,37.5-51.3,37.5c-21.9,0-36.4-14.1-58.9-14.5c-23.8-0.4-36.9,11.8-58.6,14.9h-7.4c-16-2.3-28.9-15-38.2-26.3
+	C42.9,323,21.5,279.5,17.5,223.9v-16.4c1.7-39.8,21-72.3,46.8-87.9c13.6-8.3,32.2-15.5,53-12.3c8.9,1.4,18,4.5,26,7.4
+	c7.5,3,17,8.1,25.9,7.8c6.1-0.2,12.2-3.4,18.3-5.6c17.9-6.5,35.4-13.9,58.6-10.4c27.8,4.2,47.6,16.5,59.7,35.7
+	c-23.5,15-42.1,37.6-38.9,76C269.7,253.3,290.1,273.7,315.5,285.8L315.5,285.8z M315.5,285.8"/>
+    </g>
+  </symbol>
+  <symbol id="facebook-f" viewBox="0 0 264 512">
+    <title id="facebook-f-title">Facebook F</title>
+    <path
+      d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path>
+  </symbol>
+  <symbol id="twitter" viewBox="0 0 512 512">
+    <title id="twitter-title">Twitter</title>
+    <path
+      d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+  </symbol>
+  <symbol id="dribbble" viewBox="0 0 512 512">
+    <title id="dribbble-title">Dribbble</title>
+    <path
+      d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"></path>
+  </symbol>
+  <symbol id="behance" viewBox="0 0 576 512">
+    <title id="behance-title">Behance</title>
+    <path
+      d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z"></path>
+  </symbol>
+  <symbol id="play" viewBox="0 0 22 25">
+    <title id="play-title">Play</title>
+    <path
+      d="M21.040,14.175 L2.880,24.738 C1.600,25.483 0.000,24.552 0.000,23.063 L0.000,1.937 C0.000,0.449 1.600,-0.483 2.880,0.262 L21.040,10.825 C22.320,11.569 22.320,13.430 21.040,14.175 Z"></path>
+  </symbol>
+
+</svg>
+
+<header class="page-header">
+  <!--<div class="page-header__iphones"></div>-->
+  <div class="page-header__wrapper">
+    <nav class="main-nav ">
+      <a class="logo">
+        <img class="logo__image" src="img/logo.svg" width="129" height="41">
+      </a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a>Home</a></li>
+        <li class="main-nav__item"><a>Features</a></li>
+        <li class="main-nav__item"><a>Picing</a></li>
+        <li class="button  button--main-nav" type="button">Download Now</li>
+      </ul>
+    </nav>
+    <div class="start-home">
+      <div class="start-home__wrapper">
+        <p class="start-home__title">A Powerful & Unique<br>App Landing Template</p>
+        <p class="text  text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.</p>
+        <ul class="text-list  text-list--white   text-list--start-home">
+          <li>
+            <svg class="icon  icon__check-circle  icon--white" width="75" height="26">
+              <use xlink:href="#check-circle"></use>
+            </svg>
+            Unlimited colors: banner with images, slider or video
+          </li>
+          <li>
+            <svg class="icon  icon__check-circle  icon--white" width="75" height="26">
+              <use xlink:href="#check-circle"></use>
+            </svg>
+            Fully Responsive and powered by HTML5 and CSS3
+          </li>
+          <li>
+            <svg class="icon  icon__check-circle  icon--white" width="75" height="26">
+              <use xlink:href="#check-circle"></use>
+            </svg>
+            Very easy to customize : set up in minutes
+          </li>
+        </ul>
+        <button class="button  button--start-home" type="button">Start Exploring Us</button>
+      </div>
+      <!--<div class="start-home__images">-->
+      <!--<img src="img/iPhones.png"-->
+      <!--srcset="img/iPhones@2x.png 2x" height="628" width="964">-->
+      <!--</div>-->
+    </div>
+  </div>
+</header>
+
+<main class="main">
+
+  <section class="advantages  section">
+    <div class="advantages__list">
+      <div class="advantage-item  advantage-item--online">
+        <svg class="icon  icon__advantages  icon--pink" width="75" height="26">
+          <use xlink:href="#tags"></use>
+        </svg>
+        <h3 class="advantage-item__title">Sell any product online</h3>
+        <p class="advantage-item__text text  text--gray">Over 92% of computers are infected with Adware and spyware.
+          Such software is</p>
+      </div>
+      <div class="advantage-item  advantage-item--customize">
+        <svg class="icon  icon__advantages  icon--pink" width="75" height="26">
+          <use xlink:href="#cog"></use>
+        </svg>
+        <h3 class="advantage-item__title">Very easy to customize</h3>
+        <p class="advantage-item__text text  text--gray">Many of us are so used to working on a computer desktop that
+          when it comes </p>
+      </div>
+      <div class="advantage-item  advantage-item--colors">
+        <svg class="icon  icon__advantages  icon--pink" width="75" height="26">
+          <use xlink:href="#paint-brush"></use>
+        </svg>
+        <h3 class="advantage-item__title">Unlimited colors</h3>
+        <p class="advantage-item__text text  text--gray">Audio player software is used to play back sound recordings in
+          one of the many </p>
+      </div>
+      <div class="advantage-item  advantage-item--responsive">
+        <svg class="icon  icon__advantages  icon--pink" width="75" height="26">
+          <use xlink:href="#fire-extinguisher"></use>
+        </svg>
+        <h3 class="advantage-item__title">Responsive, HTML5, CSS3</h3>
+        <p class="advantage-item__text text  text--gray">Computers have become ubiquitous in almost every facet of our
+          lives. At work, </p>
+      </div>
+      <div class="advantage-item  advantage-item--convert">
+        <svg class="icon  icon__advantages  icon--pink" width="75" height="26">
+          <use xlink:href="#file-alt"></use>
+        </svg>
+        <h3 class="advantage-item__title">Designed to convert</h3>
+        <p class="advantage-item__text text  text--gray">If you are looking for a new way to promote your business that
+          won’t cost </p>
+      </div>
+      <div class="advantage-item  advantage-item--boundaries">
+        <svg class="icon  icon__advantages  icon--pink" width="75" height="26">
+          <use xlink:href="#life-ring"></use>
+        </svg>
+        <h3 class="advantage-item__title">With no boundaries</h3>
+        <p class="advantage-item__text text  text--gray">If you are looking for a new way to promote your business that
+          won’t cost </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="appeal  section">
+    <div class="appeal__wrapper">
+
+      <!--</div>-->
+      <div class="appeal__content">
+        <h2 class="section-title  section-title--right">We don’t leave you stranded</h2>
+        <p class="text  text--gray  text--appeal">Everyone’s reasons for learning user interface design are different.
+          If
+          you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+        <p class="text  text--gray">Everyone’s reasons for learning user interface design are different. If
+          you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you’re
+          already a developer, or a PM, or a UX designer.</p>
+        <ul class="text-list  text-list--gray">
+          <li>
+            <svg class="icon  icon__check-circle  icon--black" width="16" height="16">
+              <use xlink:href="#check-circle"></use>
+            </svg>
+            Unlimited colors: banner with images, slider or video
+          </li>
+          <li>
+            <svg class="icon  icon__check-circle  icon--black" width="16" height="16">
+              <use xlink:href="#check-circle"></use>
+            </svg>
+            Fully Responsive and powered by HTML5 and CSS3
+          </li>
+          <li>
+            <svg class="icon  icon__check-circle  icon--black" width="16" height="16">
+              <use xlink:href="#check-circle"></use>
+            </svg>
+            Very easy to customize : set up in minutes
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="screenshots  section">
+    <div class="screenshots__wrapper">
+      <h2 class="section-title  section-title--center">Take a look at our screenshots</h2>
+      <p class="text  text--center  text--gray">Everyone’s reasons for learning user interface design are different. If
+        you’re
+        already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+      <div class="screenshots__gallery">
+        <!--<button type="button" class="slider-toggle  slider-toggle&#45;&#45;left  round"></button>-->
+        <!--<button type="button" class="slider-toggle  slider-toggle&#45;&#45;right  round"></button>-->
+        <div class="screenshots__slider">
+          <div class="screenshots__item  screenshots__item--1"></div>
+          <div class="screenshots__item  screenshots__item--2"></div>
+          <div class="screenshots__item  screenshots__item--3"></div>
+          <div class="screenshots__item  screenshots__item--4"></div>
+          <div class="screenshots__item  screenshots__item--5"></div>
+          <div class="screenshots__item  screenshots__item--6"></div>
+          <div class="screenshots__item  screenshots__item--7"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="prices  section">
+    <div class="prices__wrapper">
+      <h2 class="section-title  section-title--center">We've got the perfect package for you</h2>
+      <p class="text text--center  text--gray">Everyone’s reasons for learning user interface design are different. If
+        you’re
+        already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+      <div class="prices__list">
+
+        <div class="prices-item">
+          <h4 class="prices-item__title">Basic</h4>
+          <span class="prices-item__price">
+            <i class="prices-item__price-dollar">$</i>
+            12.0
+            <i class="prices-item__price-month">/m</i>
+          </span>
+          <ul class="prices-item__features-list">
+            <li class="prices-item__feature-item">One User</li>
+            <li class="prices-item__feature-item">Multiple Access</li>
+            <li class="prices-item__feature-item">SMS Support</li>
+            <li class="prices-item__feature-item">24/7 Online Support</li>
+          </ul>
+          <span class="prices-item__trial">Start Free Trial</span>
+          <button type="button" class="button  prices-item__button">Buy Now</button>
+        </div>
+
+        <div class="prices-item">
+          <h4 class="prices-item__title">Standard</h4>
+          <span class="prices-item__price">
+            <i class="prices-item__price-dollar">$</i>
+            24.0
+            <i class="prices-item__price-month">/m</i>
+          </span>
+          <ul class="prices-item__features-list">
+            <li class="prices-item__feature-item">Five User</li>
+            <li class="prices-item__feature-item">Multiple Access</li>
+            <li class="prices-item__feature-item">SMS Support</li>
+            <li class="prices-item__feature-item">24/7 Online Support</li>
+          </ul>
+          <span class="prices-item__trial">Start Free Trial</span>
+          <button type="button" class="button  prices-item__button">Buy Now</button>
+        </div>
+
+        <div class="prices-item">
+          <h4 class="prices-item__title">Premium</h4>
+          <span class="prices-item__price">
+            <i class="prices-item__price-dollar">$</i>
+            250.0
+            <i class="prices-item__price-month">/m</i>
+          </span>
+          <ul class="prices-item__features-list">
+            <li class="prices-item__feature-item">Twenty User</li>
+            <li class="prices-item__feature-item">Multiple Access</li>
+            <li class="prices-item__feature-item">SMS Support</li>
+            <li class="prices-item__feature-item">24/7 Online Support</li>
+          </ul>
+          <span class="prices-item__trial">Start Free Trial</span>
+          <button type="button" class="button  prices-item__button">Buy Now</button>
+        </div>
+
+        <div class="prices-item">
+          <h4 class="prices-item__title">Enterprise</h4>
+          <span class="prices-item__price">
+            <i class="prices-item__price-dollar">$</i>
+            999.0
+            <i class="prices-item__price-month">/m</i>
+          </span>
+          <ul class="prices-item__features-list">
+            <li class="prices-item__feature-item">Unlimeted User</li>
+            <li class="prices-item__feature-item">Multiple Access</li>
+            <li class="prices-item__feature-item">SMS Support</li>
+            <li class="prices-item__feature-item">24/7 Online Support</li>
+          </ul>
+          <span class="prices-item__trial">Start Free Trial</span>
+          <button type="button" class="button  prices-item__button">Buy Now</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <button class="round  play" type="button">
+      <svg class="icon  icon__play  icon--white" width="22" height="25">
+        <use xlink:href="#play"></use>
+      </svg>
+    </button>
+  </section>
+
+  <section class="reviews  section">
+    <div class="reviews__wrapper">
+      <h2 class="section-title  section-title--center">What our customers are saying</h2>
+      <p class="text  text--center  text--gray">Everyone’s reasons for learning user interface design are different. If
+        you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+      <div class="reviews__gallery">
+        <!--<button type="button" class="reviews-toggle  reviews-toggle&#45;&#45;left"></button>-->
+        <!--<button type="button" class="reviews-toggle  reviews-toggle&#45;&#45;right"></button>-->
+        <div class="reviews__list">
+
+          <div class="reviews-item">
+            <p class="reviews-item__content  text  text--gray">
+              The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just
+              awesome: super fast and reliable.
+            </p>
+            <div class="reviews-item__author  reviews-item__author--Bullock">
+              <span class="reviews-item__author-name">
+              Alexandra Bullock
+            </span>
+              <span class="reviews-item__company  text  text--gray">
+              Apple Inc.
+            </span>
+            </div>
+          </div>
+
+          <div class="reviews-item">
+            <p class="reviews-item__content  text  text--gray">
+              Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this
+              theme and developer support are.
+            </p>
+            <div class="reviews-item__author  reviews-item__author--Sebastian">
+              <span class="reviews-item__author-name">
+              Gary Sebastian
+            </span>
+              <span class="reviews-item__company  text  text--gray">
+              Apple Inc.
+            </span>
+            </div>
+          </div>
+
+          <div class="reviews-item">
+            <p class="reviews-item__content  text  text--gray">
+              Definitely a great theme and the support team are fantastic. Customer support is numero uno and
+              ShapingRain have got this spot on. Cheers guys.
+            </p>
+            <div class="reviews-item__author  reviews-item__author--Bilbau">
+              <span class="reviews-item__author-name">
+              Samantha Bilbau
+            </span>
+              <span class="reviews-item__company  text  text--gray">
+              Apple Inc.
+            </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="download  section">
+    <div class="download__wrapper">
+      <h2 class="download__title  section-title  section-title--center">Download Giant App Now</h2>
+      <div class="download__list">
+        <div class="app-link  app-link--apple">
+          <span class="app-link__title">Download</span>
+          <p class="text text--gray">Download from App store</p>
+        </div>
+
+        <div class="app-link  app-link--google">
+          <span class="app-link__title">Download</span>
+          <p class="text text--gray">Download from Play store</p>
+        </div>
+
+        <div class="app-link  app-link--microsoft">
+          <span class="app-link__title">Download</span>
+          <p class="text text--gray">Download from Microsoft store</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <ul class="creative-links__list">
+      <li>
+        <svg class="icon--page-footer  icon--white" width="45" height="18">
+          <use xlink:href="#facebook-f"></use>
+        </svg>
+      </li>
+      <li>
+        <svg class="icon--page-footer  icon--white" width="45" height="18">
+          <use xlink:href="#twitter"></use>
+        </svg>
+      </li>
+      <li>
+        <svg class="icon--page-footer  icon--pink" width="45" height="18">
+          <use xlink:href="#dribbble"></use>
+        </svg>
+      </li>
+      <svg class="icon--page-footer  icon--white" width="45" height="18">
+        <use xlink:href="#behance"></use>
+      </svg>
+      </li>
     </ul>
+  </div>
+  <p class="text  text--center  text--white">Copyright © 2017 | UXSEVEN - a sister concern of codepixar.com</p>
+  </div>
+</footer>
 
-  </body>
+<script type="text/javascript" src="js/script.min.js"></script>
+</body>
 </html>

@@ -1,1 +1,24 @@
-$color: #242424;
+$text-gray-color: #777777;
+$text-black-color: #222222;
+$text-white-color: #ffffff;
+$button-color: #ffffff;
+$button-color-blue: #005ebd;
+$pink-color: #f31f79;
+
+// Font-weight
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+// Transition
+$transition-time: 0.8s;
+$transition-function: ease;
+
+// Linear-gradient
+$linear-gradient: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+
+// Media queries
+$tablet-width: 'min-width: 600px';
+$desktop-width: 'min-width: 1200px';

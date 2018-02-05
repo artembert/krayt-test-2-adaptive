@@ -1,0 +1,76 @@
+.app-link {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 360px;
+  height: 115px;
+
+  padding-left: 135px;
+  padding-top: 28px;
+
+  background-color: #ffffff;
+  border-radius: 3px;
+
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
+  transition: box-shadow $transition-time $transition-function;
+
+  &::before {
+    z-index: 0;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    width: 115px;
+    height: 115px;
+
+    background-image: url('../img/Downloads.png');
+    background-color: #f7fafc;
+  }
+}
+
+.app-link:hover {
+  cursor: pointer;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.app-link__title {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: $title-font;
+  font-weight: $fw-semibold;
+  margin-bottom: 4px;
+}
+
+.app-link--apple {
+
+  &::before {
+    background-position: 0 0;
+  }
+
+  &:hover::before {
+    background-position: 0 -115px;
+  }
+}
+
+.app-link--google {
+
+  &::before {
+    background-position: -115px 0;
+  }
+
+  &:hover::before {
+    background-position: -115px -115px;
+  }
+}
+
+.app-link--microsoft {
+
+  &::before {
+    background-position: -230px 0;
+  }
+
+  &:hover::before {
+    background-position: -230px -115px;
+  }
+}

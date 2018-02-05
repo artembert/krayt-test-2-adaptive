@@ -1,0 +1,18 @@
+.download {
+  padding-top: 111px;
+  background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+}
+
+.download__wrapper {
+  @include fluid-container;
+}
+
+.download__title {
+  color: #ffffff;
+}
+
+.download__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}

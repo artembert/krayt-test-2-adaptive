@@ -5,29 +5,41 @@
   Author email: tovarov.piter@gmail.com
   From Russia with love!
 */
-
 /*=== миксины слой ===*/
-
-// @import "_mixins/mixin";
-
-
+@import "_mixins/mixin";
 
 /*=== базовый слой ===*/
-
-// @import "base/__variable";
+@import "base/my-normalize";
+@import "base/__variable";
 // @import "base/__normalize";
 // @import "base/grid";
-// @import "base/typography";
-// @import "base/buttons";
+@import "base/typography";
+@import "base/buttons";
+@import "base/svgsprite";
+@import "base/sections";
+@import "base/animations";
+
 // @import "base/forms";
-
-
 
 /*=== компоненты ===*/
 // @import "components/header";
 // @import "components/footer";
-
-
+@import "components/page-header";
+@import "components/main-nav";
+@import "components/start-home";
+@import "components/advantages";
+@import "components/advantage-item";
+@import "components/appeal";
+@import "components/advantage-item";
+@import "components/screenshots";
+@import "components/prices";
+@import "components/prices-item";
+@import "components/video";
+@import "components/reviews";
+@import "components/reviews-item";
+@import "components/download";
+@import "components/app-link";
+@import "components/page-footer";
 
 /*=== страницы ===*/
 

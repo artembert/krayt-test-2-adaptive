@@ -1,0 +1,17 @@
+.reviews__wrapper {
+  @include fluid-container()
+}
+
+.reviews__gallery {
+  position: relative;
+}
+
+.reviews-toggle {
+  position: absolute;
+}
+
+.reviews__list {
+  display: flex;
+  margin-top: 75px;
+  justify-content: space-between;
+}

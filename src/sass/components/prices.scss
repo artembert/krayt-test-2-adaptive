@@ -1,0 +1,10 @@
+.prices__wrapper {
+  @include fluid-container();
+}
+
+.prices__list {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
