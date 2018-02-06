@@ -6,6 +6,7 @@
   text-align: center;
 
   background-color: #f7fafc;
+
   transition: box-shadow $transition-time $transition-function;
 }
 
@@ -66,9 +67,10 @@
 }
 
 .prices-item:hover {
+  margin-bottom: -1px;
+
   background-color: #ffffff;
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
-  margin-bottom: -1px;
 }
 
 .prices-item:hover > .prices-item__price {
@@ -161,9 +163,10 @@
 .prices-item:hover > .prices-item__button {
   position: relative;
   top: -2px;
-  color: $text-white-color;
 
   margin-bottom: -3px;
+
+  color: $text-white-color;
 
   background-color: #fd712c;
   background-image: $linear-gradient;
@@ -174,8 +177,20 @@
 @media ($mobile-width) {
   .prices-item {
     margin-bottom: 20px;
+
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
 
+    &:hover {
+      margin-bottom: 19px;
+    }
+  }
+}
+
+@media ($tablet-width) {
+  .prices-item {
+    margin-bottom: 20px;
+
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
     &:hover {
       margin-bottom: 19px;
     }

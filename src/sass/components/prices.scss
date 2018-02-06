@@ -1,19 +1,28 @@
-@media ($mobile-width) {
+.prices__wrapper {
+  @include fluid-container();
   .prices__list {
     display: flex;
+  }
+}
+
+@media ($mobile-width) {
+  .prices__list {
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
   }
 }
 
-@media ($desktop-width) {
-  .prices__wrapper {
-    @include fluid-container();
-  }
-
+@media ($tablet-width) {
   .prices__list {
-    display: flex;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media ($desktop-width) {
+  .prices__list {
     justify-content: space-between;
     margin-top: 75px;
   }
