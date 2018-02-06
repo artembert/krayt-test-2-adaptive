@@ -172,6 +172,18 @@ body {
   font-weight: $fw-medium;
 }
 
+@media ($mobile-width) {
+  .section-title {
+    text-align: center;
+  }
+}
+
+@media ($desktop-width) {
+  .section-title {
+    text-align: center;
+  }
+}
+
 .section-title--center {
   text-align: center;
 }

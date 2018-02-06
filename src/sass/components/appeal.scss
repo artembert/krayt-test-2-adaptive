@@ -1,3 +1,8 @@
+.appeal__wrapper {
+  @include fluid-container();
+}
+
+
 @media ($mobile-width) {
 
   .appeal {
@@ -20,17 +25,32 @@
       background-position-x: center;
     }
   }
-
-
-  .appeal__wrapper {
-    @include fluid-container();
-  }
-
-  .section-title {
-    text-align: center;
-  }
 }
 
+@media ($tablet-width) {
+
+  .appeal {
+    position: relative;
+    padding-left: 362px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 20px;
+      z-index: -1;
+
+      width: 362px;
+      height: 469px;
+
+      background-image: url('../img/iphone-only.jpg');
+      background-repeat: no-repeat;
+      background-size: 1206px 469px;
+      background-position-x: -389px;
+    }
+  }
+
+}
 
 
 @media ($desktop-width) {
@@ -40,9 +60,6 @@
 
   .appeal__wrapper {
     position: relative;
-
-    @include fluid-container();
-
 
     &::before {
       content: '';
