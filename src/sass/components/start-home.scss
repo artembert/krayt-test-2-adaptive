@@ -3,15 +3,18 @@
     position: relative;
 
     &::before {
-      position: absolute;
       content: '';
+      position: absolute;
       top: 0;
       right: -20px;
+
+      width: calc(100% + 40px);
       height: 255px;
-      width: 100%;
-      background-image: url("../img/iPhones.png");
-      background-size: 375px auto;
+
+      background-image: url('../img/iPhones.png');
       background-repeat: no-repeat;
+      background-position-x: right;
+      background-size: auto 255px;
     }
   }
 
@@ -23,30 +26,33 @@
     margin: 0;
     margin-bottom: 22px;
 
-    font-family: $title-font;
     font-weight: 600;
     font-size: 36px;
     line-height: 45px;
-    color: $text-white-color;
+    font-family: $title-font;
     text-align: center;
+    color: $text-white-color;
   }
 
   .button--start-home {
-    width: 100%;
+    margin: 20px;
+    width: calc(100% - 40px);
+    border-color: #ffffff;
   }
 }
 @media ($desktop-width) {
   .start-home {
-    z-index: 3;
     position: relative;
+    z-index: 3;
+
     display: flex;
     flex-wrap: nowrap;
     padding-bottom: 214px;
   }
 
   .start-home__wrapper {
-    margin-top: 134px;
     width: 500px;
+    margin-top: 134px;
   }
 
   //.start-home__images {
@@ -60,10 +66,10 @@
     margin: 0;
     margin-bottom: 22px;
 
-    font-family: $title-font;
     font-weight: 600;
     font-size: 54px;
     line-height: 60px;
+    font-family: $title-font;
     color: $text-white-color;
   }
 

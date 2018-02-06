@@ -16,3 +16,16 @@
   justify-content: space-between;
   margin-top: 80px;
 }
+
+@media ($mobile-width) {
+
+  .download {
+    padding-top: 30px;
+  }
+
+  .download__list {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+}

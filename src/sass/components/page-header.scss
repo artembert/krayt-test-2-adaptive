@@ -1,12 +1,16 @@
-.page-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+@media ($mobile-width) {
 
-  background-image: linear-gradient(to right, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
-}
+  .page-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-.page-header__wrapper {
-  @include fluid-container();
+    background-image: linear-gradient(to right, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+  }
+
+  .page-header__wrapper {
+    @include fluid-container();
+  }
+
 }
 
 @media ($desktop-width) {

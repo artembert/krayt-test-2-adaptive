@@ -170,3 +170,14 @@
   border: 3px solid #e0e0e0;
   border-radius: 22px;
 }
+
+@media ($mobile-width) {
+  .prices-item {
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      margin-bottom: 19px;
+    }
+  }
+}

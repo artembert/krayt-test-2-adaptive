@@ -74,3 +74,15 @@
     background-position: -230px -115px;
   }
 }
+
+@media ($mobile-width) {
+  .app-link {
+    margin: 20px;
+    width: calc(100% - 40px);
+    padding-right: 20px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.3);
+  }
+  .app-link .text {
+    line-height: 20px;
+  }
+}

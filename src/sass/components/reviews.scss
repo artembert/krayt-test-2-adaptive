@@ -15,3 +15,10 @@
   margin-top: 75px;
   justify-content: space-between;
 }
+
+@media ($mobile-width) {
+  .reviews__list {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}

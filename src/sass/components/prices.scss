@@ -1,10 +1,20 @@
-.prices__wrapper {
-  @include fluid-container();
+@media ($mobile-width) {
+  .prices__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
 }
 
-.prices__list {
-  margin-top: 75px;
-  display: flex;
-  justify-content: space-between;
-}
+@media ($desktop-width) {
+  .prices__wrapper {
+    @include fluid-container();
+  }
 
+  .prices__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+  }
+}
