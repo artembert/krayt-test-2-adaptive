@@ -1,36 +1,75 @@
-.start-home {
-  z-index: 3;
-  position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 214px;
+@media ($mobile-width) {
+  .start-home {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: -20px;
+      height: 255px;
+      width: 100%;
+      background-image: url("../img/iPhones.png");
+      background-size: 375px auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .start-home__wrapper {
+    padding-top: 270px;
+  }
+
+  .start-home__title {
+    margin: 0;
+    margin-bottom: 22px;
+
+    font-family: $title-font;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 45px;
+    color: $text-white-color;
+    text-align: center;
+  }
+
+  .button--start-home {
+    width: 100%;
+  }
 }
+@media ($desktop-width) {
+  .start-home {
+    z-index: 3;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 214px;
+  }
 
-.start-home__wrapper {
-  margin-top: 134px;
-  width: 500px;
-}
+  .start-home__wrapper {
+    margin-top: 134px;
+    width: 500px;
+  }
 
-//.start-home__images {
-//  min-width: 457px;
-//  min-height: 570px;
-//  background-color: #777777;
-//  opacity: 0.5;
-//}
+  //.start-home__images {
+  //  min-width: 457px;
+  //  min-height: 570px;
+  //  background-color: #777777;
+  //  opacity: 0.5;
+  //}
 
-.start-home__title {
-  margin: 0;
-  margin-bottom: 22px;
+  .start-home__title {
+    margin: 0;
+    margin-bottom: 22px;
 
-  font-family: $title-font;
-  font-weight: 600;
-  font-size: 54px;
-  line-height: 60px;
-  color: $text-white-color;
-}
+    font-family: $title-font;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 60px;
+    color: $text-white-color;
+  }
 
-.text-list--start-home {
-  margin-bottom: 24px;
+  .text-list--start-home {
+    margin-bottom: 24px;
+  }
 }
 
 //.start-home__images {

@@ -1,22 +1,51 @@
-.advantages__list {
-  position: relative;
+@media ($mobile-width) {
+  .advantages__list {
+    position: relative;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  //padding-top: 93px;
-  //padding-bottom: 88px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    //padding-top: 93px;
+    //padding-bottom: 88px;
 
-  @include fluid-container();
+    @include fluid-container();
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -120px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
 
-    width: 100%;
-    height: 2px;
+      width: 100%;
+      height: 2px;
 
-    background-color: #eeeeee;
+      background-color: #eeeeee;
+    }
+  }
+}
+
+
+@media ($desktop-width) {
+
+  .advantages__list {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    //padding-top: 93px;
+    //padding-bottom: 88px;
+
+    @include fluid-container();
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -120px;
+
+      width: 100%;
+      height: 2px;
+
+      background-color: #eeeeee;
+    }
   }
 }

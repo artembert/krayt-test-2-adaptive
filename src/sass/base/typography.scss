@@ -135,19 +135,17 @@ body {
 
 .text--center {
   text-align: center;
-  margin-right: 270px;
-  margin-left: 270px;
 }
-
 
 .text-list {
   margin: 0;
   margin-top: 9px;
   padding: 0;
+  line-height: 18px;
 
   list-style: none;
-  line-height: 34px;
 }
+
 
 .text-list--white {
   color: $text-white-color;
@@ -161,6 +159,7 @@ body {
   position: relative;
 
   margin-left: 35px;
+  margin-bottom: 10px;
 }
 
 .section-title {
@@ -175,4 +174,29 @@ body {
 
 .section-title--center {
   text-align: center;
+}
+
+@media ($desktop-width) {
+
+  .text-list {
+    margin: 0;
+    margin-top: 9px;
+    padding: 0;
+
+    list-style: none;
+    line-height: 34px;
+  }
+
+  .text-list li {
+    position: relative;
+
+    margin-left: 35px;
+    margin-bottom: 0;
+  }
+
+  .text--center {
+    text-align: center;
+    margin-right: 270px;
+    margin-left: 270px;
+  }
 }

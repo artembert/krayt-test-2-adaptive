@@ -27,7 +27,7 @@
 }
 
 .icon__check-circle {
-  top: 7px;
+  top: 0;
   left: -35px;
 
   width: 16px;
@@ -56,3 +56,14 @@
   margin-left: -10px;
   margin-top: -11.5px;
 }
+
+@media ($desktop-width) {
+
+
+.icon__check-circle {
+  top: 7px;
+  left: -35px;
+
+  width: 16px;
+  height: 16px;
+}}

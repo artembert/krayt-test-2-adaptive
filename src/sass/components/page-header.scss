@@ -1,72 +1,84 @@
 .page-header {
-  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-  padding-top: 30px;
-
-  background-image: linear-gradient(to right, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
-
-  &::before {
-    content: '';
-    position: absolute;
-    //left: -102px;
-    top: 97px;
-    right: 0;
-    z-index: 2;
-
-    width: 50%;
-    max-width: 1920px;
-    height: 774px;
-    //margin-left: 50%;
-
-    background-image: url('../img/iphones-only.png');
-    background-repeat: no-repeat;
-    background-position: top 49px left 0;
-
-    transition: top $transition-time $transition-function;
-
-    will-change: top;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    //left: -102px;
-    top: 97px;
-    right: 0;
-    z-index: 1;
-
-    width: 50%;
-    max-width: 1920px;
-    height: 774px;
-    //margin-left: 50%;
-
-    background-image: url('../img/iphones-shadows-only.png');
-    background-repeat: no-repeat;
-    background-position: top 49px left 0;
-  }
+  background-image: linear-gradient(to right, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
 }
-
-.animation-iphone-rise {
-  &::before {
-    top: 70px;
-  }
-}
-
 
 .page-header__wrapper {
   @include fluid-container();
 }
 
-//.page-header__iphones {
-//  position: absolute;
-//
-//  width: 50%;
-//  max-width: 1920px;
-//  height: 774px;
-//  margin-left: 50%;
-//
-//  background-image: url('../img/iPhones.png');
-//  //background-image: url('../img/iphones-shadows-only.png');
-//  background-repeat: no-repeat;
-//  background-position: top 146px left 0;
-//}
+@media ($desktop-width) {
+  .page-header {
+    position: relative;
+
+    padding-top: 30px;
+
+    background-image: linear-gradient(to right, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+
+    &::before {
+      content: '';
+      position: absolute;
+      //left: -102px;
+      top: 97px;
+      right: 0;
+      z-index: 2;
+
+      width: 50%;
+      max-width: 1920px;
+      height: 774px;
+      //margin-left: 50%;
+
+      background-image: url('../img/iphones-only.png');
+      background-repeat: no-repeat;
+      background-position: top 49px left 0;
+
+      transition: top $transition-time $transition-function;
+
+      will-change: top;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      //left: -102px;
+      top: 97px;
+      right: 0;
+      z-index: 1;
+
+      width: 50%;
+      max-width: 1920px;
+      height: 774px;
+      //margin-left: 50%;
+
+      background-image: url('../img/iphones-shadows-only.png');
+      background-repeat: no-repeat;
+      background-position: top 49px left 0;
+    }
+  }
+
+  .animation-iphone-rise {
+    &::before {
+      top: 70px;
+    }
+  }
+
+  .page-header__wrapper {
+    @include fluid-container();
+  }
+
+  //.page-header__iphones {
+  //  position: absolute;
+  //
+  //  width: 50%;
+  //  max-width: 1920px;
+  //  height: 774px;
+  //  margin-left: 50%;
+  //
+  //  background-image: url('../img/iPhones.png');
+  //  //background-image: url('../img/iphones-shadows-only.png');
+  //  background-repeat: no-repeat;
+  //  background-position: top 146px left 0;
+  //}
+}

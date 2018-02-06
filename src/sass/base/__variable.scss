@@ -20,5 +20,9 @@ $transition-function: ease;
 $linear-gradient: linear-gradient(to right, #fd712c 0%, #f21780 100%);
 
 // Media queries
-$tablet-width: 'min-width: 600px';
+//$tablet-width: 'min-width: 600px';
+//$desktop-width: 'min-width: 1200px';
+
+$mobile-width: 'max-width: 599px';
+$tablet-width: 'min-width: 600px) and (max-width: 1199px';
 $desktop-width: 'min-width: 1200px';
