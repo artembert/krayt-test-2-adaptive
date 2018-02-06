@@ -40,6 +40,55 @@
     border-color: #ffffff;
   }
 }
+
+@media ($tablet-width) {
+  .start-home {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -40px;
+
+      width: calc(100% + 80px);
+      height: 255px;
+
+      background-image: url('../img/iPhones.png');
+      background-repeat: no-repeat;
+      background-position-x: right;
+      background-size: auto 255px;
+    }
+  }
+
+  .start-home__wrapper {
+
+
+    //width: calc(100% - 340px);
+  }
+
+  .start-home__title {
+    width: calc(100% - 340px);
+    box-sizing: border-box;
+    min-height: 255px;
+
+    padding-top: 30px;
+    margin: 0;
+    padding-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 45px;
+    font-family: $title-font;
+    text-align: center;
+    color: $text-white-color;
+  }
+
+  .button--start-home {
+    border-color: #ffffff;
+  }
+}
+
 @media ($desktop-width) {
   .start-home {
     position: relative;

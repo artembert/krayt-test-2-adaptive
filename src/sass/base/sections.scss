@@ -1,6 +1,18 @@
-.section {
-  padding-top: 30px;
-  padding-bottom: 20px;
+@media ($mobile-width) {
+
+  .section {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+
+@media ($tablet-width) {
+
+  .section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
 }
 
 
