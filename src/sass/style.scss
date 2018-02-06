@@ -1,14 +1,7 @@
-/*
-  Author - Sergey Popov.
-  Author URI: http://sergeypopov.name
-  Author social: https://www.facebook.com/sergeytovarov
-  Author email: tovarov.piter@gmail.com
-  From Russia with love!
-*/
-/*=== миксины слой ===*/
+// миксины слой
 @import "_mixins/mixin";
 
-/*=== базовый слой ===*/
+// базовый слой
 @import "base/my-normalize";
 @import "base/__variable";
 // @import "base/__normalize";
@@ -21,7 +14,7 @@
 
 // @import "base/forms";
 
-/*=== компоненты ===*/
+//компоненты
 // @import "components/header";
 // @import "components/footer";
 @import "components/page-header";
@@ -40,7 +33,3 @@
 @import "components/download";
 @import "components/app-link";
 @import "components/page-footer";
-
-/*=== страницы ===*/
-
-// @import "pages/layout";

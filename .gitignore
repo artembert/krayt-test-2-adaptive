@@ -1,4 +1,4 @@
-build/
+_design/
 .idea/
 node_modules/
 *.log
