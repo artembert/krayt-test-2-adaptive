@@ -29,3 +29,11 @@
   }
 
 }
+
+@media ($tablet-width) {
+  .download__list {
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+  }
+}

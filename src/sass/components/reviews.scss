@@ -12,13 +12,26 @@
 
 .reviews__list {
   display: flex;
-  margin-top: 75px;
-  justify-content: space-between;
 }
 
 @media ($mobile-width) {
   .reviews__list {
     flex-direction: column;
     margin-top: 0;
+  }
+}
+
+@media ($tablet-width) {
+  .reviews__list {
+    flex-wrap: wrap;
+    padding-top: 40px;
+    justify-content: space-around;
+  }
+}
+
+@media ($desktop-width) {
+  .reviews__list {
+    margin-top: 75px;
+    justify-content: space-between;
   }
 }
